@@ -29,11 +29,11 @@
                             <div class="logo"><a href="<?=base_url()?>Home">Travello</a></div>
                             <nav class="main_nav">
                                 <ul class="d-flex flex-row align-items-start justify-content-start">
-                                    <li class="active"><a href="<?=base_url()?>Home">Beranda</a></li>
+                                    <li><a href="<?=base_url()?>Home">Beranda</a></li>
                                     <li><a href="<?=base_url()?>About">Tentang</a></li>
                                     <li><a href="#">Layanan</a></li>
                                     <li><a href="news.html">News</a></li>
-                                    <li><a href="<?=base_url()?>kontak">Kontak</a></li>
+                                    <li class="active"><a href="<?=base_url()?>kontak">Kontak</a></li>
                                 </ul>
                             </nav>
                             <div class="header_phone ml-auto">0813-9114-6284</div>
