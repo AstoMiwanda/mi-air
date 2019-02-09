@@ -10,6 +10,7 @@
 						<nav class="main_nav">
 							<ul class="d-flex flex-row align-items-start justify-content-start">
 								<li class="nav-home"><a href="<?=base_url()?>Home">Beranda</a></li>
+								<li class="nav-ticket"><a href="<?=base_url()?>ListTicket">Tiket</a></li>
 								<li class="nav-about"><a href="<?=base_url()?>About">Tentang</a></li>
 								<li class="nav-contact"><a href="<?=base_url()?>kontak">Kontak</a></li>
 							</ul>
@@ -38,3 +39,36 @@
 		</ul>
 	</div>
 </header>
+
+<!-- Menu -->
+
+<div class="menu">
+	<div class="menu_header d-flex flex-row align-items-center justify-content-start">
+		<div class="menu_logo"><a href="index.html">Travello</a></div>
+		<div class="menu_close_container ml-auto">
+			<div class="menu_close">
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+	<div class="menu_content">
+		<ul>
+			<li class="navm-home"><a href="<?=base_url()?>Home">Beranda</a></li>
+			<li class="navm-ticket"><a href="<?=base_url()?>ListTicket">Tiket</a></li>
+			<li class="navm-about"><a href="<?=base_url()?>About">Tentang</a></li>
+			<li class="navm-contact"><a href="<?=base_url()?>kontak">Kontak</a></li>
+		</ul>
+	</div>
+	<div class="menu_social">
+		<div class="menu_phone ml-auto">Call us: 00-56 445 678 33</div>
+		<ul class="d-flex flex-row align-items-start justify-content-start">
+			<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+		</ul>
+	</div>
+</div>

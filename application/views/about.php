@@ -9,40 +9,6 @@
 <div class="super_container">
 	
 	<?php require_once 'template/navheader.php' ?>
-
-    <!-- Menu -->
-
-    <div class="menu">
-        <div class="menu_header d-flex flex-row align-items-center justify-content-start">
-            <div class="menu_logo"><a href="index.html">Travello</a></div>
-            <div class="menu_close_container ml-auto">
-                <div class="menu_close">
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div class="menu_content">
-            <ul>
-                <li><a href="<?=base_url()?>Home">Beranda</a></li>
-                <li><a href="<?=base_url()?>About">Tentang</a></li>
-                <li><a href="#">Layananan</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="<?=base_url()?>Kontak">Kontak</a></li>
-            </ul>
-        </div>
-        <div class="menu_social">
-            <div class="menu_phone ml-auto">0813-9114-6284</div>
-            <ul class="d-flex flex-row align-items-start justify-content-start">
-                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
-    </div>
 	
 	<!-- Home -->
 
@@ -50,30 +16,7 @@
 		<div class="background_image" style="background-image:url(<?=base_url()?>assets/travello/images/about.jpg)"></div>
 	</div>
 
-	<!-- Search -->
-
-	<div class="home_search">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="home_search_container">
-                        <div class="home_search_title">Cari untuk perjalanan anda</div>
-                        <div class="home_search_content">
-                            <form action="#" class="home_search_form" id="home_search_form">
-                                <div class="d-flex flex-lg-row flex-column align-items-start justify-content-lg-between justify-content-start">
-                                    <input type="text" class="search_input search_input_1" placeholder="Kota" required="required">
-                                    <input type="text" class="search_input search_input_2" placeholder="Keberangkatan" required="required">
-                                    <input type="text" class="search_input search_input_3" placeholder="Tujuan" required="required">
-                                    <input type="text" class="search_input search_input_4" placeholder="Harga" required="required">
-                                    <button class="home_search_button">Cari</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<?php require_once 'template/search.php' ?>
 
 	<!-- About -->
 
@@ -295,6 +238,7 @@
 
 <script type="text/javascript">
 	$( ".nav-about" ).last().addClass( "active" );
+	$( ".navm-about" ).last().addClass( "active" );
 </script>
 </body>
 </html>
