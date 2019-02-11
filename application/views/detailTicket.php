@@ -29,7 +29,7 @@
 
 		<!-- Contact -->
 
-        <?php foreach ($detail_ticket->result() as $value_detail_ticket) { ?>
+		<?php foreach ($detail_ticket->result() as $value_detail_ticket) { ?>
 		<section style="margin:50px 0;">
 			<div class="container">
 				<div class="row">
@@ -40,10 +40,13 @@
 									<div style="width:60px;height:60px;background-image:url(&quot;indonesian-rupiah.png&quot;);background-size:contain;background-repeat:no-repeat;background-position:center;"></div>
 								</div>
 								<div class="col-12 col-sm-12 col-md-6 col-lg-8 order-3 order-sm-3 order-md-2">
-									<h3 class="text-center" style="color:#222222;padding-bottom: 16px;border-bottom: 1px solid #aaaaaa;"><?php echo $value_detail_ticket->description_transportation_type; ?></h3>
+									<h3 class="text-center" style="color:#222222;padding-bottom: 16px;border-bottom: 1px solid #aaaaaa;">
+										<?php echo $value_detail_ticket->description_transportation_type; ?>
+									</h3>
 								</div>
 								<div class="col-6 col-sm-6 col-md-3 col-lg-2 d-flex justify-content-end order-2 order-sm-2 order-md-3">
-									<p class="text-truncate text-center" style="width:120px;padding:8px 0;background-color:#40a0f9;color:rgb(255,255,255);margin:0;border-radius:3px;"><?php echo $value_detail_ticket->description_transportation; ?><br /></p>
+									<p class="text-truncate text-center" style="width:120px;padding:8px 0;background-color:#40a0f9;color:rgb(255,255,255);margin:0;border-radius:3px;">
+										<?php echo $value_detail_ticket->description_transportation; ?><br /></p>
 								</div>
 							</div>
 							<div class="row">
@@ -60,7 +63,9 @@
 											</div>
 										</div>
 										<div class="col-12 col-sm-7 col-md-8 col-lg-8">
-											<p style="color:#696969;"><?php echo $value_detail_ticket->description_transportation_type; ?></p>
+											<p style="color:#696969;">
+												<?php echo $value_detail_ticket->description_transportation_type; ?>
+											</p>
 										</div>
 									</div>
 									<div class="row">
@@ -75,7 +80,9 @@
 											</div>
 										</div>
 										<div class="col-12 col-sm-7 col-md-8 col-lg-8">
-											<p style="color:#696969;"><?php echo $value_detail_ticket->description_transportation; ?></p>
+											<p style="color:#696969;">
+												<?php echo $value_detail_ticket->description_transportation; ?>
+											</p>
 										</div>
 									</div>
 									<div class="row">
@@ -105,7 +112,9 @@
 											</div>
 										</div>
 										<div class="col-12 col-sm-7 col-md-8 col-lg-8">
-											<p style="color:#696969;"><?php echo $value_detail_ticket->rute_from; ?></p>
+											<p style="color:#696969;">
+												<?php echo $value_detail_ticket->rute_from; ?>
+											</p>
 										</div>
 									</div>
 									<div class="row">
@@ -120,7 +129,9 @@
 											</div>
 										</div>
 										<div class="col-12 col-sm-7 col-md-8 col-lg-8">
-											<p style="color:#696969;"><?php echo $value_detail_ticket->rute_to; ?></p>
+											<p style="color:#696969;">
+												<?php echo $value_detail_ticket->rute_to; ?>
+											</p>
 										</div>
 									</div>
 								</div>
@@ -137,7 +148,9 @@
 											</div>
 										</div>
 										<div class="col-12 col-sm-7 col-md-8 col-lg-7">
-											<p style="color:#696969;"><?php echo $value_detail_ticket->depart_date; ?></p>
+											<p style="color:#696969;">
+												<?php echo $value_detail_ticket->depart_date; ?>
+											</p>
 										</div>
 									</div>
 									<div class="row">
@@ -152,7 +165,8 @@
 											</div>
 										</div>
 										<div class="col-12 col-sm-7 col-md-8 col-lg-7">
-											<p style="color:#696969;"><?php echo $value_detail_ticket->depart_time; ?> WIB</p>
+											<p style="color:#696969;">
+												<?php echo $value_detail_ticket->depart_time; ?> WIB</p>
 										</div>
 									</div>
 									<div class="row">
@@ -167,7 +181,9 @@
 											</div>
 										</div>
 										<div class="col-12 col-sm-7 col-md-8 col-lg-7">
-											<p style="color:#696969;"><?php echo $value_detail_ticket->refer_date; ?></p>
+											<p style="color:#696969;">
+												<?php echo $value_detail_ticket->refer_date; ?>
+											</p>
 										</div>
 									</div>
 									<div class="row">
@@ -182,7 +198,8 @@
 											</div>
 										</div>
 										<div class="col-12 col-sm-7 col-md-8 col-lg-7">
-											<p style="color:#696969;"><?php echo $value_detail_ticket->refer_time; ?> WIB</p>
+											<p style="color:#696969;">
+												<?php echo $value_detail_ticket->refer_time; ?> WIB</p>
 										</div>
 									</div>
 								</div>
@@ -201,7 +218,8 @@
 											</div>
 										</div>
 										<div class="col-12 col-sm-7 col-md-8 col-lg-8">
-											<h6 style="color:#40a0f9;margin-bottom:16px;">Rp <?php echo $value_detail_ticket->price; ?>.00<br /></h6>
+											<h6 style="color:#40a0f9;margin-bottom:16px;">Rp
+												<?php echo $value_detail_ticket->price; ?>.00<br /></h6>
 										</div>
 									</div>
 									<div class="row">
@@ -216,11 +234,13 @@
 											</div>
 										</div>
 										<div class="col-12 col-sm-7 col-md-8 col-lg-8">
-											<p style="color:#696969;margin:0;"><?php echo $kode_booking ?></p>
+											<p style="color:#696969;margin:0;">
+												<?php echo $kode_booking ?>
+											</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-12 col-lg-6"><button class="btn btn-outline-primary" type="button" style="width:100%;font-weight:500;">Booking
+								<div class="col-md-12 col-lg-6"><button class="btn btn-outline-primary" type="button" data-toggle="modal" data-target="#modal1" style="width:100%;font-weight:500;">Booking
 										Sekarang</button></div>
 							</div>
 						</div>
@@ -228,7 +248,92 @@
 				</div>
 			</div>
 		</section>
-        <?php } ?>
+		<?php } ?>
+
+		<section>
+			<div role="dialog" tabindex="-1" class="modal fade" id="modal1" style="opacity:1 !important;">
+				<div class="modal-dialog" role="document" style="max-width: 600px;">
+					<div class="modal-content">
+						<div class="modal-header" style="background-color: #40a0f9;">
+							<h4 class="modal-title" style="color: #ffffff;">Modal Title</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+								 aria-hidden="true" style="color: #ffffff;">×</span></button>
+						</div>
+						<div class="modal-body">
+						<?php foreach ($detail_ticket->result() as $value_detail_ticket) { ?>
+							<section>
+								<div class="container">
+									<div class="row">
+										<div class="col">
+											<div class="row" style="margin-bottom:16px;">
+												<div class="col-12">
+													<div class="row">
+														<div class="col-12">
+															<h6 style="color: #222222; font-weight: 600;">Asto Arianto Miwanda (3103116237)</h6>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-12 col-md-4">
+													<div class="row">
+														<div class="col-md-10">
+															<h6 style="color: #333333; font-weight: 500;">Transportasi</h6>
+														</div>
+														<div class="col-md-1 d-none d-md-flex">
+															<h6 style="color: #333333; font-weight: 500;">:</h6>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-12 col-md-8">
+													<p style="color: #696969;"><?php echo $value_detail_ticket->description_transportation_type." (".$value_detail_ticket->description_transportation.")" ?></p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-12 col-md-4">
+													<div class="row">
+														<div class="col-md-10">
+															<h6 style="color: #333333; font-weight: 500;">Keberangkatan</h6>
+														</div>
+														<div class="col-md-1 d-none d-md-flex">
+															<h6 style="color: #333333; font-weight: 500;">:</h6>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-12 col-md-8">
+													<p style="color: #696969;"><?php echo $value_detail_ticket->depart_time." WIB / ".$value_detail_ticket->depart_date ?></p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-12 col-md-4">
+													<div class="row">
+														<div class="col-md-10">
+															<h6 style="color: #333333; font-weight: 500;">Kode Booking</h6>
+														</div>
+														<div class="col-md-1 d-none d-md-flex">
+															<h6 style="color: #333333; font-weight: 500;">:</h6>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-12 col-md-8">
+													<p style="color: #696969;"><?php echo $kode_booking ?></p>
+												</div>
+											</div>
+											<div class="row" style="margin-top:16px;">
+												<div class="col-12"><button class="btn btn-outline-primary" type="button" style="width:100%; font-weight: 600;">Booking
+														Sekarang</button></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						<?php } ?>
+						</div>
+						<div class="modal-footer" style="display:none;"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button><button
+							 class="btn btn-primary" type="button">Save</button></div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<?php require_once 'template/footer.php' ?>
 
