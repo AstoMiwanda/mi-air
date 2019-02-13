@@ -52,7 +52,9 @@
 							<div class="col-6 col-md-7 col-lg-8">
 								<div class="row">
 									<div class="col">
-										<p style="margin:0;"><?php echo $value_data_ticket->depart_time ?></p>
+										<p style="margin:0;"><?php $currentDateTime = $value_data_ticket->depart_time;
+										$newDateTime = date('H:i', strtotime($currentDateTime));
+										echo $newDateTime." WIB"; ?></p>
 									</div>
 								</div>
 								<div class="row">
@@ -87,7 +89,9 @@
 							<div class="col-6 col-md-7 col-lg-8">
 								<div class="row">
 									<div class="col">
-										<p style="margin:0;"><?php echo $value_data_ticket->refer_time ?></p>
+										<p style="margin:0;"><?php $currentDateTime = $value_data_ticket->refer_time;
+										$newDateTime = date('H:i', strtotime($currentDateTime));
+										echo $newDateTime." WIB"; ?></p>
 									</div>
 								</div>
 								<div class="row">

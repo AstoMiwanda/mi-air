@@ -149,7 +149,8 @@
 										</div>
 										<div class="col-12 col-sm-7 col-md-8 col-lg-7">
 											<p style="color:#696969;">
-												<?php echo $value_detail_ticket->depart_date; ?>
+												<?php $mydate = $value_detail_ticket->depart_date;
+												echo date('l, F jS, Y', strtotime($mydate)); ?>
 											</p>
 										</div>
 									</div>
@@ -166,7 +167,9 @@
 										</div>
 										<div class="col-12 col-sm-7 col-md-8 col-lg-7">
 											<p style="color:#696969;">
-												<?php echo $value_detail_ticket->depart_time; ?> WIB</p>
+												<?php $currentDateTime = $value_detail_ticket->depart_time;
+												$newDateTime = date('H:i', strtotime($currentDateTime));
+												echo $newDateTime." WIB"; ?></p>
 										</div>
 									</div>
 									<div class="row">
@@ -182,7 +185,8 @@
 										</div>
 										<div class="col-12 col-sm-7 col-md-8 col-lg-7">
 											<p style="color:#696969;">
-												<?php echo $value_detail_ticket->refer_date; ?>
+												<?php $mydate = $value_detail_ticket->refer_date;
+												echo date('l, F jS, Y', strtotime($mydate)); ?>
 											</p>
 										</div>
 									</div>
@@ -199,7 +203,9 @@
 										</div>
 										<div class="col-12 col-sm-7 col-md-8 col-lg-7">
 											<p style="color:#696969;">
-												<?php echo $value_detail_ticket->refer_time; ?> WIB</p>
+												<?php $currentDateTime = $value_detail_ticket->refer_time;
+												$newDateTime = date('H:i', strtotime($currentDateTime));
+												echo $newDateTime." WIB"; ?></p>
 										</div>
 									</div>
 								</div>
@@ -300,7 +306,26 @@
 													</div>
 												</div>
 												<div class="col-sm-12 col-md-8">
-													<p style="color: #696969;"><?php echo $value_detail_ticket->depart_time." WIB / ".$value_detail_ticket->depart_date ?></p>
+													<p style="color: #696969;"><?php $currentDateTime = $value_detail_ticket->depart_time;
+												$newDateTime = date('H:i', strtotime($currentDateTime));
+												echo $newDateTime." WIB / ".$value_detail_ticket->depart_date ?></p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-12 col-md-4">
+													<div class="row">
+														<div class="col-md-10">
+															<h6 style="color: #333333; font-weight: 500;">Sampai Tujuan</h6>
+														</div>
+														<div class="col-md-1 d-none d-md-flex">
+															<h6 style="color: #333333; font-weight: 500;">:</h6>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-12 col-md-8">
+													<p style="color: #696969;"><?php $currentDateTime = $value_detail_ticket->refer_time;
+												$newDateTime = date('H:i', strtotime($currentDateTime));
+												echo $newDateTime." WIB / ".$value_detail_ticket->depart_date ?></p>
 												</div>
 											</div>
 											<div class="row">
