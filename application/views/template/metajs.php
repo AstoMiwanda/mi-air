@@ -1,3 +1,4 @@
+<script src="<?=base_url()?>assets/js/vue.js"></script>
 <script src="<?=base_url()?>assets/travello/js/jquery-3.2.1.min.js"></script>
 <script src="<?=base_url()?>assets/travello/styles/bootstrap4/popper.js"></script>
 <script src="<?=base_url()?>assets/travello/styles/bootstrap4/bootstrap.min.js"></script>

@@ -16,3 +16,4 @@
 <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/travello/styles/about_responsive.css">
 <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/travello/styles/contact.css">
 <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/travello/styles/contact_responsive.css">
+<script src="<?=base_url()?>assets/js/vue.js"></script>

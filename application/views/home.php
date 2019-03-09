@@ -9,12 +9,12 @@ header("Expires: 0");
 
 <head>
 	<title>Travello</title>
-	<?php require_once 'template/metacss.php' ?>
+	<?php require_once 'template/metacss.php' ?>	
 </head>
 
 <body>
 
-	<div class="super_container">
+	<div id="home" class="super_container">
 
 		<?php require_once 'template/navheader.php' ?>
 
@@ -427,6 +427,7 @@ header("Expires: 0");
 	</div>
 
 	<?php require_once 'template/metajs.php' ?>
+	<script src="<?=base_url()?>assets/js/home.js"></script>
 
 	<script type="text/javascript">
 		$( ".nav-home" ).last().addClass( "active" );
